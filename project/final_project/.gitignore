@@ -1,0 +1,33 @@
+.env
+stack_output.env
+.venv/
+__pycache__/
+.pytest_cache/
+stack_outputs.json
+stack_outputs.env
+
+# Secrets and credentials
+.env*
+!.env.example
+*.pem
+*.key
+*.p12
+
+# Python virtual environments
+.venv/
+.venv-*/
+venv/
+
+# Python cache
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+htmlcov/
+
+# AWS deployment outputs
+stack_output.env
+stack_outputs.env
+stack_outputs.json
+terraform.tfstate
+terraform.tfstate.*

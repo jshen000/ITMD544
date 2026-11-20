@@ -1,0 +1,29 @@
+=== LOCAL TESTS ===
+........................................................................ [ 75%]
+........................                                                 [100%]
+96 passed, 16 deselected in 27.01s
+=== AWS INTEGRATION TESTS ===
+============================= test session starts ==============================
+platform linux -- Python 3.10.12, pytest-9.2.0, pluggy-1.7.0 -- /ITMD544/project/final_project/.venv-final/bin/python
+cachedir: .pytest_cache
+rootdir: /ITMD544/project/final_project
+configfile: pytest.ini
+testpaths: tests, weather-app
+collecting ... collected 112 items / 98 deselected / 14 selected
+
+tests/integration/test_application.py::test_weather_health PASSED        [  7%]
+tests/integration/test_application.py::test_advisor_health PASSED        [ 14%]
+tests/integration/test_application.py::test_weather_rejects_invalid_zip PASSED [ 21%]
+tests/integration/test_application.py::test_weather_rejects_invalid_date PASSED [ 28%]
+tests/integration/test_application.py::test_unknown_route_returns_404 PASSED [ 35%]
+tests/integration/test_infrastructure.py::test_dynamodb_tables_are_configured PASSED [ 42%]
+tests/integration/test_infrastructure.py::test_weather_role_has_least_privilege PASSED [ 50%]
+tests/integration/test_infrastructure.py::test_advisor_role_has_least_privilege PASSED [ 57%]
+tests/integration/test_infrastructure.py::test_load_balancer_is_public_and_spans_two_azs PASSED [ 64%]
+tests/integration/test_infrastructure.py::test_listeners_forward_to_the_right_target_groups PASSED [ 71%]
+tests/integration/test_infrastructure.py::test_target_groups_use_fast_health_checks PASSED [ 78%]
+tests/integration/test_infrastructure.py::test_auto_scaling_groups_are_configured_for_recovery PASSED [ 85%]
+tests/integration/test_infrastructure.py::test_app_port_is_reachable_only_from_the_load_balancer PASSED [ 92%]
+tests/integration/test_infrastructure.py::test_every_target_becomes_healthy PASSED [100%]
+
+====================== 14 passed, 98 deselected in 5.91s =======================

@@ -1,0 +1,16 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.12, pytest-9.2.0, pluggy-1.7.0 -- /ITMD544/project/final_project/.venv-final/bin/python
+cachedir: .pytest_cache
+rootdir: /ITMD544/project/final_project
+configfile: pytest.ini
+testpaths: tests, weather-app
+collecting ... collected 112 items / 110 deselected / 2 selected
+
+tests/integration/test_recovery.py::test_tier_recovers_within_the_slo[weather]
+weather: terminated i-0d716609dfab3a12b, recovery took 52.545262813568115s (SLO 600s)
+PASSED
+tests/integration/test_recovery.py::test_tier_recovers_within_the_slo[advisor]
+advisor: terminated i-0e3cab1da6f9e4f5d, recovery took 62.41316628456116s (SLO 600s)
+PASSED
+
+================ 2 passed, 110 deselected in 116.78s (0:01:56) =================
