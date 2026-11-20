@@ -104,4 +104,4 @@ weather-app/test_weather_supplemental.py::test_wrong_units PASSED        [ 97%]
 weather-app/test_weather_wind.py::test_wind_speed_conversion PASSED      [ 98%]
 weather-app/test_weather_wind.py::test_morning_wind_aggregation PASSED   [100%]
 
-====================== 96 passed, 16 deselected in 25.92s ======================
+====================== 96 passed, 16 deselected in 26.22s ======================
